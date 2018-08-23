@@ -27,7 +27,7 @@
                 lock (locked)
                 {
                     n--;
-                    // Interlocked.Decrement(ref n);
+                    Interlocked.Decrement(ref n);
                 }
             }
 
