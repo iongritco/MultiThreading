@@ -1,4 +1,4 @@
-﻿namespace MuliThreading5
+﻿namespace SharingData
 {
     using System;
     using System.Threading;
@@ -10,7 +10,7 @@
 
         static void Main(string[] args)
         {
-            Thread t1 = new Thread(() =>
+            Thread thread1 = new Thread(() =>
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -18,9 +18,9 @@
                     Console.WriteLine($"Thread 1 {field}");
                 }
             });
-            t1.Start();
+            thread1.Start();
 
-            Thread t2 = new Thread(() =>
+            Thread thread2 = new Thread(() =>
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -28,7 +28,7 @@
                     Console.WriteLine($"Thread 2 {field}");
                 }
             });
-            t2.Start();
+            thread2.Start();
         }
     }
 }

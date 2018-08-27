@@ -1,4 +1,4 @@
-﻿namespace SharingDataIssues
+﻿namespace Interlocked
 {
     using System;
     using System.Threading;
@@ -12,7 +12,7 @@
             {
                 for (int i = 0; i < 1000000; i++)
                 {
-                    n++;
+                    Interlocked.Increment(ref n);
                 }
             });
 
@@ -20,7 +20,7 @@
 
             for (int i = 0; i < 1000000; i++)
             {
-                n--;
+                Interlocked.Decrement(ref n);
             }
 
             thread.Join();

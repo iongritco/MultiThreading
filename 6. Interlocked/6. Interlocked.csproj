@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FE515619-622C-4999-AEEB-DFD09D09696E}</ProjectGuid>
+    <ProjectGuid>{F586BC3E-5F37-43E5-9395-C3774DC624CC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MultiThreading</RootNamespace>
-    <AssemblyName>MultiThreading</AssemblyName>
+    <RootNamespace>_6.Interlocked</RootNamespace>
+    <AssemblyName>_6.Interlocked</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,9 +44,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

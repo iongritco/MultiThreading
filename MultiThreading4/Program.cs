@@ -1,5 +1,4 @@
-﻿
-namespace MultiThreading4
+﻿namespace SharingData
 {
     using System;
     using System.Threading;
@@ -8,10 +7,9 @@ namespace MultiThreading4
     {
         static void Main(string[] args)
         {
-            bool stopped = false;
+            var stopped = false;
 
-            // In case we need variables that are visible in multiple thread we can use lamba functions when creating a new thread
-            Thread t = new Thread(() =>
+            Thread thread = new Thread(() =>
             {
                 while (!stopped)
                 {
@@ -19,14 +17,14 @@ namespace MultiThreading4
                     Thread.Sleep(1000);
                 }
             });
-            t.Start();
-
+            thread.Start();
 
             Console.WriteLine("Press any key to exit");
 
             Console.ReadKey();
             stopped = true;
-            t.Join();
+
+            thread.Join();
         }
     }
 }

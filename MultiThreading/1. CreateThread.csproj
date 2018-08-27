@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AB7EAC7F-246B-4B87-A7E1-AF6B74D0A6B6}</ProjectGuid>
+    <ProjectGuid>{FE515619-622C-4999-AEEB-DFD09D09696E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MultiThreading96</RootNamespace>
-    <AssemblyName>MultiThreading96</AssemblyName>
+    <RootNamespace>MultiThreading</RootNamespace>
+    <AssemblyName>MultiThreading</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,9 +44,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93EEA398-8BBF-4067-85D9-037BBB31290A}</ProjectGuid>
+    <ProjectGuid>{A8941781-DB25-4874-B94A-FB5ADA09E3C1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MuliThreading5</RootNamespace>
-    <AssemblyName>MuliThreading5</AssemblyName>
+    <RootNamespace>_5.Lock</RootNamespace>
+    <AssemblyName>_5.Lock</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,9 +44,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

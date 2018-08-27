@@ -1,5 +1,4 @@
-﻿
-namespace MultiThreading2
+﻿namespace MultiThreading
 {
     using System;
     using System.Threading;
@@ -8,21 +7,27 @@ namespace MultiThreading2
     {
         static void Main(string[] args)
         {
-            Thread t = new Thread(new ThreadStart(ThreadMethod));
-            // t.IsBackground - threadul o sa ruleze in background si in cazul unei console nu va afisa nimic in interfata
-            t.IsBackground = true;
-            t.Start();
+            Thread thread = new Thread(DoSomethingOnWorkerThread);
+            thread.IsBackground = true;
+            thread.Priority = ThreadPriority.Lowest;
+            thread.Name = "Custom Worker Thread";
+            thread.Start(10);
 
-            t.Join();
-            Console.WriteLine("Finish job");
-            // Console.ReadLine();
-        }
-
-        public static void ThreadMethod()
-        {
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine($"ThreadMethod {i}");
+                Console.WriteLine($"Main thread: {i}");
+                Thread.Sleep(10);
+            }
+
+            thread.Join();
+            Console.WriteLine("Finished job");
+        }
+
+        public static void DoSomethingOnWorkerThread(object threadParameter)
+        {
+            for (int i = 0; i < (int)threadParameter; i++)
+            {
+                Console.WriteLine($"Worker thread: {i}");
                 Thread.Sleep(10);
             }
         }

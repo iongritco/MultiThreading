@@ -1,4 +1,4 @@
-﻿namespace MultiThreading3
+﻿namespace MultiThreading
 {
     using System;
     using System.Threading;
@@ -7,18 +7,17 @@
     {
         static void Main(string[] args)
         {
-            // trimitem parametri la thread
-            Thread t = new Thread(new ParameterizedThreadStart(ThreadMethod));
-            t.Start(5);
-        }
-
-        public static void ThreadMethod(object o)
-        {
-            for (int i = 0; i < (int)o; i++)
+            Thread thread = new Thread(threadParameter =>
             {
-                Console.WriteLine($"ThreadMethod {i}");
-                Thread.Sleep(0);
-            }
+                for (int i = 0; i < (int)threadParameter; i++)
+                {
+                    Console.WriteLine($"Worker thread: {i}");
+                }
+            });
+            thread.Start(5);
+            thread.Join();
+
+            Console.WriteLine("Finished job");
         }
     }
 }

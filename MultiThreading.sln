@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading", "MultiThreading\MultiThreading.csproj", "{FE515619-622C-4999-AEEB-DFD09D09696E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. CreateThread", "MultiThreading\1. CreateThread.csproj", "{FE515619-622C-4999-AEEB-DFD09D09696E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading2", "MultiThreading2\MultiThreading2.csproj", "{888B683A-6AEE-4750-B50A-C7AF147FDE98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. ThreadProperties", "MultiThreading2\2. ThreadProperties.csproj", "{888B683A-6AEE-4750-B50A-C7AF147FDE98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading3", "MultiThreading3\MultiThreading3.csproj", "{33D356DB-AEB8-4886-B75D-912781BA8C8F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. SharingData", "MultiThreading4\1. SharingData.csproj", "{F436A580-CB31-4B5F-B444-30F288913FE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading4", "MultiThreading4\MultiThreading4.csproj", "{F436A580-CB31-4B5F-B444-30F288913FE5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading5", "MuliThreading5\MultiThreading5.csproj", "{93EEA398-8BBF-4067-85D9-037BBB31290A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. SharingData III", "MuliThreading5\3. SharingData III.csproj", "{93EEA398-8BBF-4067-85D9-037BBB31290A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading6", "MultiThreading6\MultiThreading6.csproj", "{250BA677-3997-4C3E-8590-FEF719900611}"
 EndProject
@@ -31,9 +29,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading94", "MultiTh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading95", "MultiThreading95\MultiThreading95.csproj", "{1A01005A-127A-4295-AF69-6B0265F1DDE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading96", "MultiThreading96\MultiThreading96.csproj", "{AB7EAC7F-246B-4B87-A7E1-AF6B74D0A6B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. SharingDataIssues", "MultiThreading96\4. SharingDataIssues.csproj", "{AB7EAC7F-246B-4B87-A7E1-AF6B74D0A6B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading97", "MultiThreading97\MultiThreading97.csproj", "{312DF8F3-4A58-40B2-9364-1860718E1F9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. ThreadDefinition", "01. ThreadDefinition", "{6DEE58F4-56BE-4922-ACDC-A77B63D7C024}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. ThreadSafety", "02. ThreadSafety", "{EFB13B1B-8F99-49CD-AECD-0A8EB7581025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. SharingData II", "SharingData\2. SharingData II.csproj", "{2F280D3E-50AE-4035-BA3A-CB14C523B456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. Lock", "5. Lock\5. Lock.csproj", "{A8941781-DB25-4874-B94A-FB5ADA09E3C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. Interlocked", "6. Interlocked\6. Interlocked.csproj", "{F586BC3E-5F37-43E5-9395-C3774DC624CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. ExceptionHandling", "3. ExceptionHandling\3. ExceptionHandling.csproj", "{B6D77926-6DB3-4DB8-9854-8932B73424FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +59,6 @@ Global
 		{888B683A-6AEE-4750-B50A-C7AF147FDE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{888B683A-6AEE-4750-B50A-C7AF147FDE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{888B683A-6AEE-4750-B50A-C7AF147FDE98}.Release|Any CPU.Build.0 = Release|Any CPU
-		{33D356DB-AEB8-4886-B75D-912781BA8C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33D356DB-AEB8-4886-B75D-912781BA8C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{33D356DB-AEB8-4886-B75D-912781BA8C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{33D356DB-AEB8-4886-B75D-912781BA8C8F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F436A580-CB31-4B5F-B444-30F288913FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F436A580-CB31-4B5F-B444-30F288913FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F436A580-CB31-4B5F-B444-30F288913FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -105,9 +111,36 @@ Global
 		{312DF8F3-4A58-40B2-9364-1860718E1F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{312DF8F3-4A58-40B2-9364-1860718E1F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{312DF8F3-4A58-40B2-9364-1860718E1F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F280D3E-50AE-4035-BA3A-CB14C523B456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F280D3E-50AE-4035-BA3A-CB14C523B456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F280D3E-50AE-4035-BA3A-CB14C523B456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F280D3E-50AE-4035-BA3A-CB14C523B456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8941781-DB25-4874-B94A-FB5ADA09E3C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8941781-DB25-4874-B94A-FB5ADA09E3C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8941781-DB25-4874-B94A-FB5ADA09E3C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8941781-DB25-4874-B94A-FB5ADA09E3C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F586BC3E-5F37-43E5-9395-C3774DC624CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F586BC3E-5F37-43E5-9395-C3774DC624CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F586BC3E-5F37-43E5-9395-C3774DC624CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F586BC3E-5F37-43E5-9395-C3774DC624CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D77926-6DB3-4DB8-9854-8932B73424FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D77926-6DB3-4DB8-9854-8932B73424FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D77926-6DB3-4DB8-9854-8932B73424FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D77926-6DB3-4DB8-9854-8932B73424FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE515619-622C-4999-AEEB-DFD09D09696E} = {6DEE58F4-56BE-4922-ACDC-A77B63D7C024}
+		{888B683A-6AEE-4750-B50A-C7AF147FDE98} = {6DEE58F4-56BE-4922-ACDC-A77B63D7C024}
+		{F436A580-CB31-4B5F-B444-30F288913FE5} = {EFB13B1B-8F99-49CD-AECD-0A8EB7581025}
+		{93EEA398-8BBF-4067-85D9-037BBB31290A} = {EFB13B1B-8F99-49CD-AECD-0A8EB7581025}
+		{AB7EAC7F-246B-4B87-A7E1-AF6B74D0A6B6} = {EFB13B1B-8F99-49CD-AECD-0A8EB7581025}
+		{2F280D3E-50AE-4035-BA3A-CB14C523B456} = {EFB13B1B-8F99-49CD-AECD-0A8EB7581025}
+		{A8941781-DB25-4874-B94A-FB5ADA09E3C1} = {EFB13B1B-8F99-49CD-AECD-0A8EB7581025}
+		{F586BC3E-5F37-43E5-9395-C3774DC624CC} = {EFB13B1B-8F99-49CD-AECD-0A8EB7581025}
+		{B6D77926-6DB3-4DB8-9854-8932B73424FC} = {6DEE58F4-56BE-4922-ACDC-A77B63D7C024}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A81C26D6-750B-4FC8-901D-4393A82CF27B}
