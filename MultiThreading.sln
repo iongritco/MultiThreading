@@ -45,7 +45,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. ParallelForEach", "03. P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. PLINQ", "03. ParallelProgramming\8. PLINQ\8. PLINQ.csproj", "{CA9E148F-61B0-427E-894D-8610AD63C69E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9. TaskExceptionHandler", "9. TaskExceptionHandler\9. TaskExceptionHandler.csproj", "{F2079D2C-2A4D-432B-B0A8-09AD3AE9191B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9. TaskExceptionHandler", "03. ParallelProgramming\9. TaskExceptionHandler\9. TaskExceptionHandler.csproj", "{F2079D2C-2A4D-432B-B0A8-09AD3AE9191B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
