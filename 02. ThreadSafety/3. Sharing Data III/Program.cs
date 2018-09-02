@@ -5,7 +5,7 @@
 
     class Program
     {
-        [ThreadStatic]
+        //[ThreadStatic]
         public static int field;
 
         static void Main(string[] args)

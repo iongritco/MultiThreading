@@ -2,7 +2,6 @@
 {
     using System;
     using System.Threading;
-    using System.Threading.Tasks;
 
     class Program
     {
@@ -10,7 +9,7 @@
         {
             object lockA = new object();
             object lockB = new object();
-            Task task = Task.Run(() =>
+            Thread thread = new Thread(() =>
             {
                 lock (lockA)
                 {
@@ -22,6 +21,8 @@
                 }
             });
 
+            thread.Start();
+
             lock (lockB)
             {
                 Thread.Sleep(1000);
@@ -31,7 +32,7 @@
                 }
             }
 
-            task.Wait();
+            thread.Join();
             Console.WriteLine("Finished job");
         }
     }

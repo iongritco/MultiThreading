@@ -13,10 +13,10 @@
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine($"Main thread: {i}");
-                Thread.Sleep(10);
+                Thread.Sleep(50);
             }
 
-            thread.Join();
+            // thread.Join();
 
             Console.WriteLine("Finished job");
         }
@@ -26,7 +26,7 @@
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine($"Worker thread: {i}");
-                Thread.Sleep(10);
+                Thread.Sleep(100);
             }
         }
     }
