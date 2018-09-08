@@ -19,7 +19,7 @@
                 Thread.Sleep(50);
             }
 
-            thread.Join();
+            //thread.Join();
             Console.WriteLine("Finished job");
         }
 

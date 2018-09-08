@@ -19,19 +19,19 @@ namespace PLinq
 
             var stopWatch = new Stopwatch();
             stopWatch.Start();
-            var result = sites.Where(x => DownloadContent(x).Result.Length > 10000).Count();
+            var result = sites.Where(x => DownloadContentAsync(x).Result.Length > 10000).Count();
             stopWatch.Stop();
             Console.WriteLine($"Number of sites with lenght>10000 - {result}");
             Console.WriteLine($"-------------Time for regular LINQ: {stopWatch.ElapsedMilliseconds}");
 
             stopWatch.Restart();
-            result = sites.AsParallel().Where(x => DownloadContent(x).Result.Length > 10000).Count();
+            result = sites.AsParallel().Where(x => DownloadContentAsync(x).Result.Length > 10000).Count();
             stopWatch.Stop();
             Console.WriteLine($"Number of sites with lenght>10000 - {result}");
             Console.WriteLine($"------------Time for PLINQ: {stopWatch.ElapsedMilliseconds}");
         }
 
-        public static async Task<string> DownloadContent(string url)
+        public static async Task<string> DownloadContentAsync(string url)
         {
             using (HttpClient client = new HttpClient())
             {

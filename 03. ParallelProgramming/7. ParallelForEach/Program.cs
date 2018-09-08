@@ -19,7 +19,7 @@
             stopWatch.Start();
             foreach (var siteUrl in sites)
             {
-                var result = DownloadContent(siteUrl).Result;
+                var result = DownloadContentAsync(siteUrl).Result;
                 Console.WriteLine($"{siteUrl} - {result.Length}");
             }
             stopWatch.Stop();
@@ -29,14 +29,14 @@
             ParallelOptions options = new ParallelOptions { MaxDegreeOfParallelism = sites.Length };
             Parallel.ForEach(sites, options, (siteUrl) =>
             {
-                var result = DownloadContent(siteUrl).Result;
+                var result = DownloadContentAsync(siteUrl).Result;
                 Console.WriteLine($"{siteUrl} - {result.Length}");
             });
             stopWatch.Stop();
             Console.WriteLine($"------------Time for parallel ForEach: {stopWatch.ElapsedMilliseconds}");
         }
 
-        public static async Task<string> DownloadContent(string url)
+        public static async Task<string> DownloadContentAsync(string url)
         {
             using (HttpClient client = new HttpClient())
             {

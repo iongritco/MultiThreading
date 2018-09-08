@@ -11,12 +11,12 @@
             {
                 Console.WriteLine("Do some action in the first task");
             })
-            .ContinueWith((i) =>
+            .ContinueWith((previousTask) =>
             {
                 Console.WriteLine("Continue the action in the second task");
                 throw new Exception();
             })
-            .ContinueWith((i) =>
+            .ContinueWith((previousTask) =>
             {
                 Console.WriteLine("Only on faulted");
             }, TaskContinuationOptions.OnlyOnFaulted);

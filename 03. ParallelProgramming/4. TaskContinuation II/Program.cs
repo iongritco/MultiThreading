@@ -7,21 +7,21 @@
     {
         static void Main(string[] args)
         {
-            Task<int> newTask = Task.Run(() =>
+            Task<int> task = Task.Run(() =>
             {
                 return 2;
             })
-            .ContinueWith((task) =>
+            .ContinueWith((previousTask) =>
             {
-                return task.Result * 2;
+                return previousTask.Result * 2;
             });
 
-            newTask.ContinueWith((task) =>
+            task=task.ContinueWith((previousTask) =>
             {
-                return task.Result * 2;
+                return previousTask.Result * 2;
             });
 
-            Console.WriteLine(newTask.Result);
+            Console.WriteLine(task.Result);
         }
     }
 }
