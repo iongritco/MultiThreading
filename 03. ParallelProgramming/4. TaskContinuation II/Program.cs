@@ -16,7 +16,7 @@
                 return previousTask.Result * 2;
             });
 
-            task=task.ContinueWith((previousTask) =>
+            task.ContinueWith((previousTask) =>
             {
                 return previousTask.Result * 2;
             });
