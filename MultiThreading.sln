@@ -37,15 +37,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. Deadlock", "02. ThreadSa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. TaskContinuation II", "03. ParallelProgramming\4. TaskContinuation II\4. TaskContinuation II.csproj", "{EA997547-FF64-4F4E-B7A2-AA9B5CEEB4CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. ParallelFor", "03. ParallelProgramming\5. Parallel.For\5. ParallelFor.csproj", "{58083E89-6E75-45AB-AE2A-9D5810EEC794}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. ParallelFor", "03. ParallelProgramming\6. ParallelFor\6. ParallelFor.csproj", "{58083E89-6E75-45AB-AE2A-9D5810EEC794}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. ParallelForTiming", "03. ParallelProgramming\6. ParallelForTiming\6. ParallelForTiming.csproj", "{896CBFE9-E679-43CD-906F-ADEE5E4708B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. ParallelForTiming", "03. ParallelProgramming\7. ParallelForTiming\7. ParallelForTiming.csproj", "{896CBFE9-E679-43CD-906F-ADEE5E4708B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. ParallelForEach", "03. ParallelProgramming\7. ParallelForEach\7. ParallelForEach.csproj", "{B0465545-E0C6-45C8-9AAE-74E6F1A1EED0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. ParallelForEach", "03. ParallelProgramming\8. ParallelForEach\8. ParallelForEach.csproj", "{B0465545-E0C6-45C8-9AAE-74E6F1A1EED0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. PLINQ", "03. ParallelProgramming\8. PLINQ\8. PLINQ.csproj", "{CA9E148F-61B0-427E-894D-8610AD63C69E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9. PLINQ", "03. ParallelProgramming\9. PLINQ\9. PLINQ.csproj", "{CA9E148F-61B0-427E-894D-8610AD63C69E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9. TaskExceptionHandler", "03. ParallelProgramming\9. TaskExceptionHandler\9. TaskExceptionHandler.csproj", "{F2079D2C-2A4D-432B-B0A8-09AD3AE9191B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. TaskExceptionHandler", "03. ParallelProgramming\5. TaskExceptionHandler\5. TaskExceptionHandler.csproj", "{F2079D2C-2A4D-432B-B0A8-09AD3AE9191B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

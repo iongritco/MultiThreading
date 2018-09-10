@@ -22,7 +22,7 @@
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Catched exception from the worker thread: {ex.Message}");
+                Console.WriteLine($"Catch exception from the worker thread: {ex.Message}");
             }
         }
 
